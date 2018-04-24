@@ -1,7 +1,7 @@
 /*
  * Authors: Keeton Hersey, AJ Cordero
- * Date: 4.20.18 lab 7
- * Notes: This lab was to implement the usage of JTests and the parsing of coin values
+ * Date: 4.24.18
+ * Notes: Implementation of dynamic algorithms
  */
 
 

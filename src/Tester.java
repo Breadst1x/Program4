@@ -1,8 +1,8 @@
 
 /*
- * Author: Anthony Cordero
- * Date: 4/13/18
- * Overview: JTests for the lab
+ * Author: Anthony Cordero, Keeton Hersey
+ * Date: 4/24/18
+ * Overview: JTests for the dynamic lab
  */
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -11,10 +11,10 @@ class Tester {
 
 	//test variables
 	public static int[] coinValues = {25,10,5,1};
-	public static int centValue = 62;
-	public static int numOfCoins = 5;
+	public static int centValue = 78;
+	public static int numOfCoins = 6;
 	public static int[] coinArray = Coin.coinArray(coinValues, centValue);
-	public static int[] expectedArray = {25,25,10,1,1};
+	public static int[] expectedArray = {25,25,25,1,1,1};
 	
 	@Test
 	//makes sure the array values out of coin.java is the same as what's expected.
@@ -46,7 +46,7 @@ class Tester {
 	//tests to make sure the program outputs the number of coins necessary
 	@Test
 	public void testCoinImplement() {
-		assertEquals(numOfCoins, Coin.coinAdder(coinArray),"Error");
+		assertEquals(numOfCoins, Coin.sumLength (coinArray),"Error");
 	}
 	
 
